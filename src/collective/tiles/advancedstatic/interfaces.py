@@ -16,7 +16,7 @@ class ICollectiveTilesAdvancedstaticLayer(IDefaultBrowserLayer):
 class IAdvancedStaticTile(model.Schema):
     title = schema.TextLine(
         title=_('label_tile_title', u'Tile title'),
-        required=False
+        required=True
     )
     footer = schema.TextLine(
         title=_('label_tile_footer', u'Tile footer'),
