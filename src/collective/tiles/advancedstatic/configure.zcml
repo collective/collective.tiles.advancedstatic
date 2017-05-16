@@ -10,7 +10,7 @@
   <includeDependencies package="." />
   <genericsetup:registerProfile
       name="default"
-      title="collective.tiles.advancedstatic"
+      title="Advanced Static tile"
       directory="profiles/default"
       description="Installs the collective.tiles.advancedstatic add-on."
       provides="Products.GenericSetup.interfaces.EXTENSION"
@@ -19,11 +19,19 @@
 
   <genericsetup:registerProfile
       name="uninstall"
-      title="collective.tiles.advancedstatic (uninstall)"
+      title="Advanced Static tile (uninstall)"
       directory="profiles/uninstall"
       description="Uninstalls the collective.tiles.advancedstatic add-on."
       provides="Products.GenericSetup.interfaces.EXTENSION"
       post_handler=".setuphandlers.uninstall"
+      />
+
+  <genericsetup:registerProfile
+      name="mosaic_support"
+      title="Advanced Static tile (mosaic support)"
+      directory="profiles/mosaic_support"
+      description="Add this tile to mosaic list."
+      provides="Products.GenericSetup.interfaces.EXTENSION"
       />
 
   <utility
@@ -41,6 +49,7 @@
       description="A tile that show static text"
       add_permission="cmf.ModifyPortalContent"
       schema=".interfaces.IAdvancedStaticTile"
+      layer=".interfaces.ICollectiveTilesAdvancedstaticLayer"
       class=".tile.AdvancedStaticTile"
       template="tile.pt"
       permission="zope2.View"

@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 from Products.CMFPlone.interfaces import INonInstallable
+from plone import api
 from zope.interface import implementer
 
 
@@ -15,7 +16,13 @@ class HiddenProfiles(object):
 
 def post_install(context):
     """Post install script"""
-    # Do something at the end of the installation of this package.
+    portal_quickinstaller = api.portal.get_tool('portal_quickinstaller')
+    if not portal_quickinstaller.isProductInstalled('plone.app.mosaic'):
+         # skip if mosaic isn't installed
+        return
+    mosaic_profile = 'collective.tiles.collection:mosaic_support'
+    setup_tool = api.portal.get_tool('portal_setup')
+    setup_tool.runImportStepFromProfile(mosaic_profile, 'plone.app.registry')
 
 
 def uninstall(context):
