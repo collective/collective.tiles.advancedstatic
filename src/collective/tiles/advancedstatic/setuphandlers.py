@@ -20,7 +20,7 @@ def post_install(context):
     if not portal_quickinstaller.isProductInstalled('plone.app.mosaic'):
          # skip if mosaic isn't installed
         return
-    mosaic_profile = 'collective.tiles.collection:mosaic_support'
+    mosaic_profile = 'collective.tiles.advancedstatic:mosaic_support'
     setup_tool = api.portal.get_tool('portal_setup')
     setup_tool.runImportStepFromProfile(mosaic_profile, 'plone.app.registry')
 
