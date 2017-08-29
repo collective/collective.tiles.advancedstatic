@@ -7,7 +7,7 @@
                 target_attr view/data/target_attr;
                 link_target python: target_attr and '_blank' or '_self'">
     <!-- HEADER -->
-    <div class="tile-header"
+    <h3 class="tileTitle"
          tal:condition="python: title or img_style">
         <span tal:condition="img_style"
               tal:attributes="style img_style"/>
@@ -16,13 +16,13 @@
            tal:omit-tag="not:tile_link">
             <span class="ast_title" tal:content="title" />
         </a>
-    </div>
+    </h3>
     <!-- BODY -->
-    <div class="tile-text" 
+    <div class="tile-text tileBody"
          tal:condition="text"
          tal:content="structure text/output" />
     <!-- FOOTER -->
-    <div class="tile-footer" tal:condition="footer">
+    <div class="tile-footer tileFooter" tal:condition="footer">
         <a class="ast-footer-link"
            tal:attributes="href tile_link; target link_target"
            tal:omit-tag="not:tile_link">
