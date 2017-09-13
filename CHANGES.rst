@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.0a2 (unreleased)
+1.0a2 (2017-09-13)
 ------------------
 
 - Add mosaic support in a separate profile. If mosaic is installed, this will be installed.
