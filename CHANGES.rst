@@ -2,10 +2,12 @@ Changelog
 =========
 
 
-1.0a3 (unreleased)
+1.0.0p4 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Plone 4 branch/version. From now, this branch is compatible with Plone4.
+  The problem is with internal link fields.
+  [cekk]
 
 
 1.0a2 (2017-09-13)

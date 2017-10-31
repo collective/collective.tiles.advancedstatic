@@ -6,7 +6,9 @@ from plone.supermodel import model
 from zope import schema
 from plone.app.textfield import RichText
 from collective.tiles.advancedstatic import _
-from plone.app.vocabularies.catalog import CatalogSource
+from plone.formwidget.contenttree import UUIDSourceBinder
+from plone.formwidget.contenttree import ContentTreeFieldWidget
+from plone.autoform import directives
 
 
 class ICollectiveTilesAdvancedstaticLayer(IDefaultBrowserLayer):
@@ -39,8 +41,9 @@ class IAdvancedStaticTile(model.Schema):
                       u'Insert an internal link. This field override external '
                       'link field'),
         required=False,
-        source=CatalogSource()
+        source=UUIDSourceBinder(),
     )
+    directives.widget(internal_url=ContentTreeFieldWidget)
     target_attr = schema.Bool(
         title=_('label_target_attr', u'Open links in a new window'),
         description=_('help_target_attr',
@@ -55,7 +58,7 @@ class IAdvancedStaticTile(model.Schema):
                       u'Insert an image that will be shown as background of '
                       'the header'),
         required=False,
-        source=CatalogSource(portal_type=('Image'))
+        source=UUIDSourceBinder(portal_type="Image"),
     )
     image_ref_height = schema.Int(
         title=_('label_image_ref_height', u'Background image height'),
