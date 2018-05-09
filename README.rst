@@ -44,10 +44,10 @@ If you need to give users the
 This is just select with a list of css classes with user-friendly names that will be appended to the tile container.
 
 To populate this list, you need to set a series of values in a registry entry: `Advanced static tiles: available CSS styles`
-Each value is a string with css class name and human-friendly name separated by a "|" character, like this:
+Each value is a string with css class name and human-friendly name separated by a "|" character, like this::
 
-tile-red|tile with red background
-tile-blue-no-title|tile with blue background without title
+    tile-red|tile with red background
+    tile-blue-no-title|tile with blue background without title
 
 where tile-red and tile-blue-no-title are css classes with some specific css rules in the theme.
 
