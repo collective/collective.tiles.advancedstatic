@@ -1,38 +1,19 @@
-.. This README is meant for consumption by humans and pypi. Pypi can render rst files so please do not use Sphinx features.
-   If you want to learn more about writing documentation, please check out: http://docs.plone.org/about/documentation_styleguide.html
-   This text does not appear on pypi or github. It is a comment.
-
 ==============================================================================
 collective.tiles.advancedstatic
 ==============================================================================
 
-Tell me what your product does
+A tile that shows html text, allowing to add some defined styles, class and other option
 
 Features
 --------
 
-- Can be bullet points
-
-
-Examples
---------
-
-This add-on can be seen in action at the following sites:
-- Is there a page on the internet where everybody can see the features?
-
-
-Documentation
--------------
-
-Full documentation for end users can be found in the "docs" folder, and is also available online at http://docs.plone.org/foo/bar
-
-
-Translations
-------------
-
-This product has been translated into
-
-- Klingon (thanks, K'Plai)
+- Emulates the old text portlet with some extra fields
+- Customizable footer label
+- Customizable "read more" link
+- Customizable header background image
+- Customizable additional css classes
+- Select a Preset style from list
+- Mosaic-ready
 
 
 Installation
@@ -41,9 +22,7 @@ Installation
 Install collective.tiles.advancedstatic by adding it to your buildout::
 
     [buildout]
-
     ...
-
     eggs =
         collective.tiles.advancedstatic
 
@@ -51,20 +30,62 @@ Install collective.tiles.advancedstatic by adding it to your buildout::
 and then running ``bin/buildout``
 
 
+Usage
+-----
+
+You can't use this tile without a tile manager (or maybe, you can if you create
+new tiles manually in some specific context) like `Mosaic <https://pypi.python.org/pypi/plone.app.mosaic>`_ or `redturtle.tiles.management <https://github.com/RedTurtle/redturtle.tiles.management>`_
+
+
+Preset styles
+-------------
+
+If you need to give users the
+This is just select with a list of css classes with user-friendly names that will be appended to the tile container.
+
+To populate this list, you need to set a series of values in a registry entry: `Advanced static tiles: available CSS styles`
+Each value is a string with css class name and human-friendly name separated by a "|" character, like this:
+
+tile-red|tile with red background
+tile-blue-no-title|tile with blue background without title
+
+where tile-red and tile-blue-no-title are css classes with some specific css rules in the theme.
+
+
+Translations
+------------
+
+This product has been translated into
+
+- Italian
+
+
 Contribute
 ----------
 
 - Issue Tracker: https://github.com/collective/collective.tiles.advancedstatic/issues
 - Source Code: https://github.com/collective/collective.tiles.advancedstatic
-- Documentation: https://docs.plone.org/foo/bar
 
-
-Support
+Credits
 -------
 
-If you are having issues, please let us know.
-We have a mailing list located at: project@example.com
+Developed with the support of:
 
+* `Regione Emilia-Romagna`__
+
+Regione Emilia-Romagna supports the `PloneGov initiative`__.
+
+__ http://www.regione.emilia-romagna.it/
+__ http://www.plonegov.it/
+
+Authors
+-------
+
+This product was developed by RedTurtle Technology team.
+
+.. image:: http://www.redturtle.it/redturtle_banner.png
+   :alt: RedTurtle Technology Site
+   :target: http://www.redturtle.it/
 
 License
 -------

@@ -5,7 +5,8 @@ Changelog
 1.0a3 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Improve readme
+  [cekk]
 
 
 1.0a2 (2017-09-13)
