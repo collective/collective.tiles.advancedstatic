@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.0a3 (unreleased)
+1.0.0 (2018-05-09)
 ------------------
 
 - Improve readme
