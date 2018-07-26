@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.0.1 (unreleased)
+1.0.1 (2018-07-26)
 ------------------
 
 - Fix tile insert in Plone 5.1 when using mosaic tiles edior. [fredvd]
