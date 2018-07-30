@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html lang="en" xml:lang="en" 
-      xmlns="http://www.w3.org/1999/xhtml" 
+<html lang="en" xml:lang="en"
+      xmlns="http://www.w3.org/1999/xhtml"
       xmlns:tal="http://xml.zope.org/namespaces/tal"
       xmlns:i18n="http://xml.zope.org/namespaces/i18n"
       i18n:domain="collective.tiles.advancedstatic">
@@ -16,7 +16,7 @@
                     link_target python: target_attr and '_blank' or '_self'">
         <div class="tile-container">
         <!-- HEADER -->
-        <h3 class="tileTitle"
+        <h2 class="tileTitle"
             tal:condition="python: title or img_style">
             <span tal:condition="img_style"
                     tal:attributes="style img_style"/>
@@ -25,7 +25,7 @@
                 tal:omit-tag="not:tile_link">
                 <span class="ast_title" tal:content="title" />
             </a>
-        </h3>
+        </h2>
         <!-- BODY -->
         <div class="tile-text tileBody"
             tal:condition="text"
