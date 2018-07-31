@@ -5,7 +5,7 @@ Changelog
 1.0.2 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Fix document outline [nzambello]
 
 
 1.0.1 (2018-07-26)
