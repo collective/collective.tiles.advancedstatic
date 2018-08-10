@@ -6,7 +6,8 @@ Changelog
 ------------------
 
 - Fix document outline [nzambello]
-
+- Add missing dependency (plone.app.tiles)
+  [cekk
 
 1.0.1 (2018-07-26)
 ------------------
