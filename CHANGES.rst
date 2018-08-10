@@ -2,12 +2,12 @@ Changelog
 =========
 
 
-1.0.2 (unreleased)
+1.0.2 (2018-08-10)
 ------------------
 
 - Fix document outline [nzambello]
 - Add missing dependency (plone.app.tiles)
-  [cekk
+  [cekk]
 
 1.0.1 (2018-07-26)
 ------------------
