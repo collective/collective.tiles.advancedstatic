@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.0.0p4 (unreleased)
+0.1.0 (unreleased)
 ------------------
 
 - Plone 4 branch/version. From now, this branch is compatible with Plone4.
