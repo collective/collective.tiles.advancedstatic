@@ -5,7 +5,8 @@ Changelog
 1.0.5 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Python 3 compatibility
+  [cekk]
 
 
 1.0.4 (2019-05-14)
