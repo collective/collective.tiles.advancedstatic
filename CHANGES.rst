@@ -3,6 +3,7 @@ Changelog
 
 
 1.0.5 (unreleased)
+1.1.0 (unreleased)
 ------------------
 
 - Python 3 compatibility
