@@ -34,7 +34,7 @@ class AdvancedStaticTile(tiles.PersistentTile):
             else:
                 obj = uuidToObject(image_ref)
                 if obj:
-                    return obj.getIamge().height
+                    return obj.image._height
                 else:
                     return ''
 
