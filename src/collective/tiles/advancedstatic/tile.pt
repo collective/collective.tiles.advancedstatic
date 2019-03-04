@@ -18,7 +18,7 @@
         <!-- HEADER -->
         <h2 class="tileTitle"
             tal:condition="python: title or img_style">
-            <span tal:condition="img_style"
+            <div tal:condition="img_style"
                     tal:attributes="style img_style"/>
             <a class="ast-title-link"
                 tal:attributes="href tile_link; target link_target"
