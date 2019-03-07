@@ -25,7 +25,7 @@ class AdvancedStaticTile(tiles.PersistentTile):
                 return obj.absolute_url()
 
     @property
-    def image_heigth(self):
+    def image_height(self):
         image_ref = self.data.get('image_ref', None)
         image_ref_height = self.data.get('image_ref_height', None)
         if image_ref:
@@ -34,7 +34,7 @@ class AdvancedStaticTile(tiles.PersistentTile):
             else:
                 obj = uuidToObject(image_ref)
                 if obj:
-                    return obj.getIamge().height
+                    return obj.image._height
                 else:
                     return ''
 
@@ -43,8 +43,8 @@ class AdvancedStaticTile(tiles.PersistentTile):
         style = ''
         if self.image_url:
             style += "background-image:url({})".format(self.image_url)
-            if self.image_heigth:
-                style += ";height:{}px".format(self.image_heigth)
+            if self.image_height:
+                style += ";height:{}px".format(self.image_height)
             return style
         return None
 

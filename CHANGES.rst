@@ -5,7 +5,8 @@ Changelog
 1.0.3 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- [Bugfix]: fix problem with image height using old attributes
+  [lucabel]
 
 
 1.0.2 (2018-08-10)
