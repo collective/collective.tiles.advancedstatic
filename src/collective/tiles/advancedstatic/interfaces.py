@@ -7,6 +7,8 @@ from zope import schema
 from plone.app.textfield import RichText
 from collective.tiles.advancedstatic import _
 from plone.app.vocabularies.catalog import CatalogSource
+from plone.app.z3cform.widget import RelatedItemsFieldWidget
+from plone.autoform import directives
 
 
 class ICollectiveTilesAdvancedstaticLayer(IDefaultBrowserLayer):
@@ -55,7 +57,12 @@ class IAdvancedStaticTile(model.Schema):
                       u'Insert an image that will be shown as background of '
                       'the header'),
         required=False,
-        source=CatalogSource(portal_type=('Image'))
+        vocabulary="plone.app.vocabularies.Catalog",
+    )
+    directives.widget(
+        "image_ref",
+        RelatedItemsFieldWidget,
+        pattern_options={"selectableTypes": ["Image"]},
     )
     image_ref_height = schema.Int(
         title=_('label_image_ref_height', u'Background image height'),
