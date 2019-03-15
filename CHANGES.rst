@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.0.3 (unreleased)
+1.0.3 (2019-03-15)
 ------------------
 
 - Fix problem with image height using old attributes
