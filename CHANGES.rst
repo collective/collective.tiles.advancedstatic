@@ -5,8 +5,10 @@ Changelog
 1.0.3 (unreleased)
 ------------------
 
-- [Bugfix]: fix problem with image height using old attributes
-  [lucabel]
+- Fix problem with image height using old attributes
+  [lucabel, daniele-andreotti]
+- Fix image ref navigation
+  [daniele-andreotti]
 
 
 1.0.2 (2018-08-10)
