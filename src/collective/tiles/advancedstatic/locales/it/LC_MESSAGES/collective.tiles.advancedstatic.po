@@ -1,6 +1,3 @@
-# --- PLEASE EDIT THE LINES BELOW CORRECTLY ---
-# SOME DESCRIPTIVE TITLE.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
@@ -15,15 +12,15 @@ msgstr ""
 "Language-Code: en\n"
 "Language-Name: English\n"
 "Preferred-Encodings: utf-8 latin1\n"
-"Domain: collective.tiles.advancedstatic\n"
+"Domain: DOMAIN\n"
 
 #: ../configure.zcml:57
 msgid "A tile that show static text"
-msgstr ""
+msgstr "Una tile che mostra del testo statico"
 
 #: ../configure.zcml:35
 msgid "Add this tile to mosaic list."
-msgstr ""
+msgstr "Aggiungi questa tile alla lista mosaic."
 
 #: ../configure.zcml:18
 msgid "Advanced Static tile"
@@ -52,89 +49,89 @@ msgstr ""
 #. Default: "Insert an image that will be shown as background of the header"
 #: ../interfaces.py:56
 msgid "help_image_ref"
-msgstr ""
+msgstr "Inserisci una immagine che verrà mostrata come background dell'header"
 
 #. Default: "Specify image background's height (in pixels). If empty will be used image's height."
 #: ../interfaces.py:69
 msgid "help_image_ref_height"
-msgstr ""
+msgstr "Specifica l'altezza dell'immagine in background (in pixel). Se è vuoto verrà utilizzata l'altezza dell'immagine."
 
 #. Default: "Insert an internal link. This field override external link field"
 #: ../interfaces.py:40
 msgid "help_internal_url"
-msgstr ""
+msgstr "Inserisci un link interno. Questo campo sovrascrive il campo link esterno."
 
 #. Default: "Tick this box if you want to open the header and footer links in a new window"
 #: ../interfaces.py:48
 msgid "help_target_attr"
-msgstr ""
+msgstr "Spunta questo box se vuoi che i link presenti nell'header e nel footer venghino aperti in una nuova finestra"
 
 #. Default: "CSS class to add at the tile"
 #: ../interfaces.py:77
 msgid "help_tile_class"
-msgstr ""
+msgstr "Class CSS che viene aggiunta alla tile"
 
 #. Default: "If given, the header and footer will link to this URL"
 #: ../interfaces.py:34
 msgid "help_tile_morelink"
-msgstr ""
+msgstr "Se presente, l'header e il footer porteranno a questo URL"
 
 #. Default: "Choose a CSS style for the tile"
 #: ../interfaces.py:81
 msgid "help_tile_style"
-msgstr ""
+msgstr "Scegli uno stile CSS per questa tile"
 
 #. Default: "Insert some formatted text"
 #: ../interfaces.py:29
 msgid "help_tile_text"
-msgstr ""
+msgstr "Inserisci del testo formattato"
 
 #. Default: "Background image"
 #: ../interfaces.py:55
 msgid "label_image_ref"
-msgstr ""
+msgstr "Immagine di background"
 
 #. Default: "Background image height"
 #: ../interfaces.py:68
 msgid "label_image_ref_height"
-msgstr ""
+msgstr "Altezza dell'immagine di background"
 
 #. Default: "Internal link"
 #: ../interfaces.py:39
 msgid "label_internal_url"
-msgstr ""
+msgstr "Link interno"
 
 #. Default: "Open links in a new window"
 #: ../interfaces.py:47
 msgid "label_target_attr"
-msgstr ""
+msgstr "Apri i link in una nuova finestra"
 
 #. Default: "tile class"
 #: ../interfaces.py:75
 msgid "label_tile_class"
-msgstr ""
+msgstr "Classi della tile"
 
 #. Default: "Tile footer"
 #: ../interfaces.py:24
 msgid "label_tile_footer"
-msgstr ""
+msgstr "Footer della tile"
 
 #. Default: "More link"
 #: ../interfaces.py:33
 msgid "label_tile_morelink"
-msgstr ""
+msgstr "Altri link"
 
 #. Default: "Portlet style"
 #: ../interfaces.py:80
 msgid "label_tile_style"
-msgstr ""
+msgstr "Stile della portlet"
 
 #. Default: "Tile text"
 #: ../interfaces.py:28
 msgid "label_tile_text"
-msgstr ""
+msgstr "Testo della tile"
 
 #. Default: "Tile title"
 #: ../interfaces.py:20
 msgid "label_tile_title"
-msgstr ""
+msgstr "Titolo della tile"

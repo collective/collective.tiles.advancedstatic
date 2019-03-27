@@ -5,7 +5,8 @@ Changelog
 1.0.4 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Added some italian translation
+  [eikichi18]
 
 
 1.0.3 (2019-03-15)
