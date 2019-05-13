@@ -7,6 +7,8 @@ Changelog
 
 - Added some italian translation
   [eikichi18]
+- Added support for plone.app.multilingual
+  [eikichi18]
 
 
 1.0.3 (2019-03-15)
