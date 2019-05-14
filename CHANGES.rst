@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.0.4 (unreleased)
+1.0.4 (2019-05-14)
 ------------------
 
 - Added some italian translation
