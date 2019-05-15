@@ -5,16 +5,18 @@ from setuptools import find_packages
 from setuptools import setup
 
 
-long_description = '\n\n'.join([
-    open('README.rst').read(),
-    open('CONTRIBUTORS.rst').read(),
-    open('CHANGES.rst').read(),
-])
+long_description = '\n\n'.join(
+    [
+        open('README.rst').read(),
+        open('CONTRIBUTORS.rst').read(),
+        open('CHANGES.rst').read(),
+    ]
+)
 
 
 setup(
     name='collective.tiles.advancedstatic',
-    version='1.0.5.dev0',
+    version='1.1.0.dev0',
     description="Advanced static tile for plone mosaic",
     long_description=long_description,
     # Get more from https://pypi.python.org/pypi?%3Aaction=list_classifiers
@@ -22,8 +24,11 @@ setup(
         "Environment :: Web Environment",
         "Framework :: Plone",
         "Framework :: Plone :: 5.0",
+        "Framework :: Plone :: 5.1",
+        "Framework :: Plone :: 5.2",
         "Programming Language :: Python",
         "Programming Language :: Python :: 2.7",
+        "Programming Language :: Python :: 3.7",
         "Operating System :: OS Independent",
         "License :: OSI Approved :: GNU General Public License v2 (GPLv2)",
     ],
@@ -54,7 +59,7 @@ setup(
             'plone.app.contenttypes',
             'plone.app.tiles',
             'plone.app.robotframework[debug]',
-        ],
+        ]
     },
     entry_points="""
     [z3c.autoinclude.plugin]
