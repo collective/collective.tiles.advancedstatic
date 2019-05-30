@@ -2,4 +2,5 @@ graft src/collective
 graft docs
 include *.rst
 include *.txt
+exclude tox.ini
 global-exclude *.pyc
