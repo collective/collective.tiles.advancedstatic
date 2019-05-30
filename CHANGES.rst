@@ -7,6 +7,8 @@ Changelog
 
 - Python 3 compatibility
   [cekk]
+- Added more italian translations
+  [pnicolli]
 
 
 1.0.4 (2019-05-14)
