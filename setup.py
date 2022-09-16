@@ -16,7 +16,7 @@ long_description = '\n\n'.join(
 
 setup(
     name='collective.tiles.advancedstatic',
-    version='1.1.1.dev0',
+    version='2.0.0',
     description="Advanced static tile for plone mosaic",
     long_description=long_description,
     # Get more from https://pypi.python.org/pypi?%3Aaction=list_classifiers
