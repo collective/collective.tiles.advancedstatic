@@ -5,7 +5,8 @@ Changelog
 2.0.1 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Plone 6 compatibility.
+  [cekk]
 
 
 2.0.0 (2022-09-16)
